@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      {/* Header */}
+      {}
       <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
@@ -34,13 +34,14 @@ export default function Home() {
             </Link>
           </nav>
           <div className="flex items-center gap-4">
-            <Button className="bg-[#c18c8c] hover:bg-[#a57878] text-white">Reservar Cita</Button>
+            <Link href="https://wa.me/5493814484195" target="_blank">
+              <Button className="bg-[#c18c8c] hover:bg-[#a57878] text-white">Reservar Turno</Button>
+            </Link>
           </div>
         </div>
       </header>
-
       <main className="flex-1">
-        {/* Hero Section */}
+        {}
         <section className="relative">
           <div className="grid md:grid-cols-2">
             <div className="bg-[#f9f3f3] py-12 md:py-24 lg:py-32 flex items-center">
@@ -54,7 +55,9 @@ export default function Home() {
                   Tratamientos personalizados para realzar tu belleza natural y cuidar la salud de tu piel para que luzcas tu mejor versión.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-[#c18c8c] hover:bg-[#a57878] text-white">Reservar Turno</Button>
+                  <Link href="https://wa.me/5493814484195" target="_blank">
+                    <Button className="bg-[#c18c8c] hover:bg-[#a57878] text-white">Reservar Turno</Button>
+                  </Link>
                   <Button variant="outline" className="border-[#c18c8c] text-[#c18c8c] hover:bg-[#f9f3f3]">
                     Conocer Tratamientos
                   </Button>
@@ -80,14 +83,13 @@ export default function Home() {
                 src="/hero.png?height=800&width=600"
                 alt="Dra. Ana Belén"
                 fill
-                className="object-cover" 
+                className="object-cover"
                 priority
               />
             </div>
           </div>
         </section>
-
-        {/* About Section */}
+        {}
         <section id="about" className="py-12 md:py-24 bg-white">
           <div className="container px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -132,8 +134,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* Treatments Section */}
+        {}
         <section id="treatments" className="py-12 md:py-24 bg-[#f9f3f3]">
           <div className="container px-4 md:px-6">
             <div className="text-center space-y-4 mb-12">
@@ -142,7 +143,6 @@ export default function Home() {
                 Ofrecemos una amplia gama de tratamientos dermatológicos y estéticos personalizados para cada paciente.
               </p>
             </div>
-
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <Card className="bg-white border-none shadow-sm hover:shadow-md transition-shadow">
                 <div className="relative h-48 w-full overflow-hidden rounded-t-lg">
@@ -179,7 +179,6 @@ export default function Home() {
                   </Button>
                 </CardFooter>
               </Card>
-
               <Card className="bg-white border-none shadow-sm hover:shadow-md transition-shadow">
                 <div className="relative h-48 w-full overflow-hidden rounded-t-lg">
                   <Image
@@ -215,7 +214,6 @@ export default function Home() {
                   </Button>
                 </CardFooter>
               </Card>
-
               <Card className="bg-white border-none shadow-sm hover:shadow-md transition-shadow">
                 <div className="relative h-48 w-full overflow-hidden rounded-t-lg">
                   <Image
@@ -251,7 +249,6 @@ export default function Home() {
                   </Button>
                 </CardFooter>
               </Card>
-
               <Card className="bg-white border-none shadow-sm hover:shadow-md transition-shadow">
                 <div className="relative h-48 w-full overflow-hidden rounded-t-lg">
                   <Image
@@ -289,7 +286,6 @@ export default function Home() {
                   </Button>
                 </CardFooter>
               </Card>
-
               <Card className="bg-white border-none shadow-sm hover:shadow-md transition-shadow">
                 <div className="relative h-48 w-full overflow-hidden rounded-t-lg">
                   <Image
@@ -325,7 +321,6 @@ export default function Home() {
                   </Button>
                 </CardFooter>
               </Card>
-
               <Card className="bg-white border-none shadow-sm hover:shadow-md transition-shadow">
                 <div className="relative h-48 w-full overflow-hidden rounded-t-lg">
                   <Image
@@ -362,14 +357,12 @@ export default function Home() {
                 </CardFooter>
               </Card>
             </div>
-
             <div className="mt-12 text-center">
               <Button className="bg-[#c18c8c] hover:bg-[#a57878] text-white">Ver todos los tratamientos</Button>
             </div>
           </div>
         </section>
-
-        {/* Testimonials Section */}
+        {}
         <section id="testimonials" className="py-12 md:py-24 bg-white">
           <div className="container px-4 md:px-6">
             <div className="text-center space-y-4 mb-12">
@@ -378,7 +371,6 @@ export default function Home() {
                 Experiencias reales de pacientes que han confiado en nuestros tratamientos.
               </p>
             </div>
-
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <Card className="bg-[#f9f3f3] border-none">
                 <CardHeader>
@@ -404,7 +396,6 @@ export default function Home() {
                   </div>
                 </CardContent>
               </Card>
-
               <Card className="bg-[#f9f3f3] border-none">
                 <CardHeader>
                   <div className="flex items-center gap-1 text-[#c18c8c]">
@@ -430,7 +421,6 @@ export default function Home() {
                   </div>
                 </CardContent>
               </Card>
-
               <Card className="bg-[#f9f3f3] border-none">
                 <CardHeader>
                   <div className="flex items-center gap-1 text-[#c18c8c]">
@@ -458,8 +448,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* Contact Section */}
+        {}
         <section id="contact" className="py-12 md:py-24 bg-[#f9f3f3]">
           <div className="container px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -594,8 +583,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-
-      {/* Footer */}
+      {}
       <footer className="bg-white py-8 border-t border-[#e5d8d8]">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
@@ -635,4 +623,3 @@ export default function Home() {
     </div>
   )
 }
-
